@@ -5,48 +5,33 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name="\"User\"")
 public class User implements UserDetails {
 
-    @Id 
+    @Id
     @GeneratedValue
     private Long id;
+
+    @Column(unique = true, nullable = false)
     private String email;
+
+    @Column(nullable = false)
     private String passwordString;
-
-    User(){}
-
-    User(Long id, String email, String passwordString) {
-        this.id = id;
-        this.email = email;
-        this.passwordString = passwordString;
-    }
-
-    public Long getId(){
-        return this.id;
-    }
-    public String getEmail(){
-        return this.email;
-    }
-    public String getPasswordString(){
-        return this.passwordString;
-    }
-
-    public void setId(Long id){
-        this.id = id;
-    }
-    public void setEmail(String email){
-        this.email = email;
-    }
-    public void setPasswordString(String password){
-        this.passwordString = password;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bucketlist.app.bucketlist.services.JwtService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +20,9 @@ public class UserController {
 
     @Autowired
     PasswordEncoder encoder;
+
+    @Autowired
+    AuthenticationManager authManager;
 
     @GetMapping("hello")
     public String getMethodName() {
@@ -36,10 +41,10 @@ public class UserController {
     @PostMapping("user/login")
     public String loginUser(@RequestBody User u) {
         User currentUser = repository.findByEmail(u.getEmail()).get(0);
-        if(currentUser.getPasswordString().equals(u.getPasswordString())) {
-            return JwtService.getUserToken(currentUser);
-        }
-        return "User not found";
+        authManager.authenticate(new UsernamePasswordAuthenticationToken(u.getEmail(), u.getPassword()));
+        System.out.println("@@ Username, Password: " + u.getEmail() + ", " + encoder.encode(u.getPasswordString()));
+        System.out.println("@@ Current User Password: " + currentUser.getPasswordString());
+        return JwtService.getUserToken(currentUser);
     }
     
 }
