@@ -11,7 +11,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.bucketlist.app.bucketlist.users.UserRepository;
+import com.bucketlist.app.bucketlist.user.UserRepository;
 
 @Configuration
 public class ApplicationConfig {

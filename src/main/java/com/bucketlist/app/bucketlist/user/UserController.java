@@ -1,4 +1,4 @@
-package com.bucketlist.app.bucketlist.users;
+package com.bucketlist.app.bucketlist.user;
 
 import org.springframework.web.bind.annotation.RestController;
 

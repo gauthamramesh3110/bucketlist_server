@@ -4,7 +4,7 @@ import java.util.Date;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.bucketlist.app.bucketlist.users.User;
+import com.bucketlist.app.bucketlist.user.User;
 
 public class JwtService {
     public static String getUserToken(User u){
