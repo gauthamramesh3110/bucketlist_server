@@ -1,7 +1,8 @@
-package com.bucketlist.app.bucketlist.services;
+package com.bucketlist.app.bucketlist.configs;
 
 import java.io.IOException;
 
+import com.bucketlist.app.bucketlist.services.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
