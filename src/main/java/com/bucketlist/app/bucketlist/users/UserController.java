@@ -1,9 +1,7 @@
-package com.bucketlist.app.bucketlist.controllers;
+package com.bucketlist.app.bucketlist.users;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bucketlist.app.bucketlist.models.User;
-import com.bucketlist.app.bucketlist.repositories.UserRepository;
 import com.bucketlist.app.bucketlist.services.JwtService;
 
 import org.springframework.beans.factory.annotation.Autowired;

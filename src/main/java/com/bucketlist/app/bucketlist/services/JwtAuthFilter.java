@@ -12,8 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.lang.NonNull;
 
-import com.bucketlist.app.bucketlist.models.User;
-import com.bucketlist.app.bucketlist.repositories.UserRepository;
+import com.bucketlist.app.bucketlist.users.UserRepository;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

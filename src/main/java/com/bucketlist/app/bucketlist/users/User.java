@@ -1,4 +1,4 @@
-package com.bucketlist.app.bucketlist.models;
+package com.bucketlist.app.bucketlist.users;
 
 import java.util.Collection;
 

@@ -1,8 +1,7 @@
-package com.bucketlist.app.bucketlist.repositories;
+package com.bucketlist.app.bucketlist.users;
 
 import org.springframework.data.repository.Repository;
 
-import com.bucketlist.app.bucketlist.models.User;
 import java.util.List;
 
 
