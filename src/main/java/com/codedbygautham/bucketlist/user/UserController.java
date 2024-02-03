@@ -1,8 +1,8 @@
-package com.bucketlist.app.bucketlist.user;
+package com.codedbygautham.bucketlist.user;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bucketlist.app.bucketlist.services.JwtService;
+import com.codedbygautham.bucketlist.services.JwtService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

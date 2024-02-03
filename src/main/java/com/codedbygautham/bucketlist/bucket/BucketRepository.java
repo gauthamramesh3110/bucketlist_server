@@ -1,4 +1,4 @@
-package com.bucketlist.app.bucketlist.bucket;
+package com.codedbygautham.bucketlist.bucket;
 
 import org.springframework.data.repository.Repository;
 import java.util.List;

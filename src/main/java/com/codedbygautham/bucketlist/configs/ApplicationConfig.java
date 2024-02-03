@@ -1,4 +1,4 @@
-package com.bucketlist.app.bucketlist.configs;
+package com.codedbygautham.bucketlist.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.bucketlist.app.bucketlist.user.UserRepository;
+import com.codedbygautham.bucketlist.user.UserRepository;
 
 @Configuration
 public class ApplicationConfig {

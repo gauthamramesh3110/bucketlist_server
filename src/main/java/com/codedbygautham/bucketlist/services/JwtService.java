@@ -1,10 +1,10 @@
-package com.bucketlist.app.bucketlist.services;
+package com.codedbygautham.bucketlist.services;
 
 import java.util.Date;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.bucketlist.app.bucketlist.user.User;
+import com.codedbygautham.bucketlist.user.User;
 
 public class JwtService {
     public static String getUserToken(User u){

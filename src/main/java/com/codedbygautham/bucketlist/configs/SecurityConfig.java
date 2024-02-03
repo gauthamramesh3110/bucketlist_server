@@ -1,4 +1,4 @@
-package com.bucketlist.app.bucketlist.configs;
+package com.codedbygautham.bucketlist.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

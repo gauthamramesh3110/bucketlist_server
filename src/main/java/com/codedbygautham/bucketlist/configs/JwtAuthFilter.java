@@ -1,9 +1,6 @@
-package com.bucketlist.app.bucketlist.configs;
+package com.codedbygautham.bucketlist.configs;
 
 import java.io.IOException;
-
-import com.bucketlist.app.bucketlist.services.JwtService;
-import com.bucketlist.app.bucketlist.user.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -13,6 +10,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+
+import com.codedbygautham.bucketlist.services.JwtService;
+import com.codedbygautham.bucketlist.user.UserRepository;
+
 import org.springframework.lang.NonNull;
 
 import jakarta.servlet.FilterChain;

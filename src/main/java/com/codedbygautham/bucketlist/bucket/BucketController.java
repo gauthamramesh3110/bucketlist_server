@@ -1,8 +1,8 @@
-package com.bucketlist.app.bucketlist.bucket;
+package com.codedbygautham.bucketlist.bucket;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bucketlist.app.bucketlist.user.User;
+import com.codedbygautham.bucketlist.user.User;
 
 import java.util.List;
 

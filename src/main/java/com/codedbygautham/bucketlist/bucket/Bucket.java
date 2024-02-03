@@ -1,4 +1,4 @@
-package com.bucketlist.app.bucketlist.bucket;
+package com.codedbygautham.bucketlist.bucket;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
